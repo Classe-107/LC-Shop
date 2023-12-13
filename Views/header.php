@@ -27,8 +27,8 @@
         <div class="container">
             <h1>OOP - Shop</h1>
             <ul>
-                <li><a href="index.php">Movies</a></li>
-                <li><a href="books.php">Book</a></li>
+                <li><a href="/classe107/LC-Shop/Views/movies/index.php">Movies</a></li>
+                <li><a href="/classe107/LC-Shop/Views/books/index.php">Book</a></li>
             </ul>
 
         </div>

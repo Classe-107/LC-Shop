@@ -1,6 +1,6 @@
 <?php
-include __DIR__ . '/Views/header.php';
-include __DIR__ . '/Model/Book.php';
+include __DIR__ . '/../header.php';
+include __DIR__ . '/../../Model/Book.php';
 
 ?>
 <section class="container">
@@ -11,5 +11,5 @@ include __DIR__ . '/Model/Book.php';
     </div>
 </section>
 <?php
-include __DIR__ . '/Views/footer.php';
+include __DIR__ . '/../footer.php';
 ?>
