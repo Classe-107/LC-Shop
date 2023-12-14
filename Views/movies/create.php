@@ -4,7 +4,7 @@ include __DIR__ . '/../../Model/Movie.php';
 if (isset($_POST['title'])) {
     $data = $_POST;
     var_dump($data);
-    $movie_id = Movie::create($conn, $data, 'movies', 'Movie');
+    $movie_id = Movie::create($conn, $data, 'movies');
     //header("Location: show.php?id=$movie_id");
 }
 
