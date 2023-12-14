@@ -10,4 +10,19 @@ abstract class Model
 
     }
 
+    public static function fetchAll($conn, $table)
+    {
+        //impostiamo la query
+        $sql = "SELECT * FROM $table";
+
+
+        $result = $conn->query($sql);
+        //var_dump($result);
+        return $result;
+
+    }
+
+
+
+
 }
