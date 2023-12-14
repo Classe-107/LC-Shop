@@ -9,7 +9,6 @@ class Movie extends Model
     public string $title;
     public string $original_title;
     public string $language;
-    public string $date;
     public float $vote;
     public string $image;
 
