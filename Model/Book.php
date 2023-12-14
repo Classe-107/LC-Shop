@@ -23,7 +23,7 @@ class Book extends Model
     public function formatCard()
     {
         $itemCard = [
-
+            'id' => $this->id,
             'image' => $this->cover_image,
             'title' => strlen($this->title) > 28 ? substr($this->title, 0, 28) . '...' : $this->title,
             'content' => substr($this->plot, 0, 100) . '...',

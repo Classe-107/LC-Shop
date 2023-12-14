@@ -34,7 +34,7 @@ class Movie extends Model
     {
 
         $cardItem = [
-
+            'id' => $this->id,
             'image' => $this->image,
             'title' => strlen($this->title) > 28 ? substr($this->title, 0, 28) . '...' : $this->title,
             'custom' => $this->getVote(),
