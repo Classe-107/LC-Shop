@@ -4,7 +4,11 @@ include __DIR__ . '/../../Model/Movie.php';
 $result = Movie::fetchAll($conn, 'movies');
 ?>
 <section class="container">
-    <h2>Movies</h2>
+    <div class="d-flex">
+        <h2>Movies</h2>
+        <a class="btn btn-primary ms-auto my-4" href="create.php">Add new movie</a>
+    </div>
+
     <div class="row gy-4">
         <?php
 
