@@ -21,7 +21,22 @@ abstract class Model
         return $result;
 
     }
-
+    public static function create($conn, $data, $table)
+    {
+        $sql = "";
+        $s = "";
+        if ($table == 'movies') {
+            $sql = "INSERT INTO $table (title, original_title, language, vote, image) VALUES (?, ?, ?, ?, ?)";
+            $s = "sssss";
+        } else {
+            $sql = "INSERT INTO $table (title, plot, cover_image) VALUES (?, ?, ?)";
+            $s = "sss";
+        }
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param($s, ...array_values($data));
+        $stmt->execute();
+        return $stmt->insert_id;
+    }
 
 
 
